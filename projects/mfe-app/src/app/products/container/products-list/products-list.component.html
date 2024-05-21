@@ -1,0 +1,40 @@
+
+<section class="site_list_container">
+    <p class="site_list_text">Product Details</p>
+
+    <table class="content-table">
+        <thead>
+          <tr>
+            <th>Product ID</th>
+            <th>Contract ID</th>
+            <th>Legal Entity Name</th>
+            <th>Price</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Term</th>
+            <th>Date Match</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let product of productList;">
+                <tr>
+                    <td class="fd">{{product.productId}}</td>
+                    <td>{{product.contractId}}</td>
+                    <td>{{product.entityName}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.startDate}}</td>
+                    <td>{{product.endDate}}</td>
+                    <td>{{product.term}}</td>
+                   <td class="date_match"> {{product.dateMatch ? 'Match' : 'Not Match'}} </td>
+                   
+                  </tr>
+            </ng-container>
+          
+          
+        </tbody>
+      </table>
+    
+</section>
+
+

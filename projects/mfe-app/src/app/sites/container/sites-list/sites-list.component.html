@@ -1,0 +1,46 @@
+
+<section class="site_list_container">
+    <p class="site_list_text">Sites List</p>
+
+    <table class="content-table">
+        <thead>
+          <tr>
+            <th>Site Id</th>
+            <th>POD</th>
+            <th>DC</th>
+            <th>Address</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Zip</th>
+            <th>CustomerName</th>
+            <th>Meter Type</th>
+            <th>Cycle</th>
+            <th>Load Profile</th>
+            <th>Profile</th>
+            <th>Rate Code</th>
+          </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let site of siteList;">
+                <tr>
+                    <td class="fd">{{site.siteId}}</td>
+                    <td>{{site.pod}}</td>
+                    <td>{{site.dc}}</td>
+                    <td>{{site.address}}</td>
+                    <td>{{site.city}}</td>
+                    <td>{{site.state}}</td>
+                    <td>{{site.zip}}</td>
+                    <td>{{site.customer}}</td>
+                    <td>{{site.meterType}}</td>
+                    <td>{{site.cycle}}</td>
+                    <td>{{site.loadProfile}}</td>
+                    <td>{{site.profile}}</td>
+                    <td>{{site.rateCode}}</td>
+                  </tr>
+            </ng-container>
+          
+          
+        </tbody>
+      </table>
+    
+</section>

@@ -1,0 +1,53 @@
+header {
+  padding: 20px 30px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 20px;
+  .logo {
+    height: 50px; // Adjust as needed
+  }
+
+  .dsp-text {
+    font-family: Effra;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #404450;
+  }
+
+  .navigation {
+    .nav-link {
+      color: #00aeef;
+
+      text-decoration: none;
+      margin: 0 10px;
+      font-family: "Roboto", sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 14px;
+      letter-spacing: 2px;
+      text-align: left;
+
+      &:hover {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #00aeef;
+      }
+    }
+    .active {
+      padding-bottom: 5px;
+      border-bottom: 2px solid #00aeef;
+    }
+  }
+
+  .user-info {
+    color: #000;
+    cursor: pointer;
+  }
+}

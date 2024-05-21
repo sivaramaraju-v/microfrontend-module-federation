@@ -1,0 +1,28 @@
+.dsp_banner {
+  gap: 0px;
+  opacity: 0.5;
+  background: linear-gradient(
+      54.69deg,
+      #71edff 39.08%,
+      #25b8f2 73.54%,
+      #cbc0ff 90.41%,
+      #ddeaf0 105.11%
+    ),
+    linear-gradient(5.52deg, #3ec1f4 -16.84%, rgba(37, 184, 242, 0.0001) 80.26%),
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.852298),
+      rgba(255, 255, 255, 0.852298)
+    );
+
+  .dsp_banner_text {
+    padding: 25px 20px;
+    // font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #1f1f20;
+  }
+}
